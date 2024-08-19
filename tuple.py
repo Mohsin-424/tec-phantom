@@ -59,10 +59,13 @@ print(y)
 # tup = tuple(y)
 # print(tup)
 
-y.remove((5))
-del y[0]
+# y.remove((5))
+# # del y[0]
+# y.pop(0) # remove from index position
 
-print(y)
+
+# print(y)
+
 
 
 
