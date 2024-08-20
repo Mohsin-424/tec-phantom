@@ -37,3 +37,19 @@ print(set5)
 set6 = set1 & set2 | set2 & set3 - set4
 print(set6)
 
+
+# Example of set complement in Python
+set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+
+# Complement of set2 in set1 (elements in set1 but not in set2)
+complement = set1 - set2
+
+print(f' The Complement of set1 and set2 = {complement}') 
+b = set1 - set2
+
+print(b)
+
+
+
+
