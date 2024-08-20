@@ -59,17 +59,53 @@
 # Write a Python script that counts and prints the number of 
 # vowels (a, e, i, o, u) in a user-input string using a for loop. Ignore case.
 
-string = str(input('Please enter any string'))
+# string = str(input('Please enter any string'))
 
-count = 0
-vowels = "aeiou"
-for char in string:
-    if char.lower() in vowels:
-        count += 1
-print(f"The vowels in given number are:{count}")
+# count = 0
+# vowels = "aeiou"
+# for char in string:
+#     if char.lower() in vowels:
+#         count += 1
+# print(f"The vowels in given number are:{count}")
 
 
-        
+
+# Write a Python script to generate the first n numbers in the Fibonacci sequence,
+#  where n is a positive integer provided by the user. Use a while loop to compute the sequence.
+
+# num = int(input("Enter any Number Please:          "))
+
+# a , b = 0 , 1
+# count = 0
+
+# while count <  num:
+#     print(a, end = "")
+#     a , b = b, a+b
+#     count += 1
+
+# print( num[count] )
+
+
+# Another Way
+
+# num = int( input("Enter any number :           "))
+# a, b = 0, 1
+
+# count = 0
+
+# fabonaci_sequence = []
+
+# while count<num:
+#     fabonaci_sequence.append(a)
+#     a,b = b, a + b
+#     count += 1
+
+# print(fabonaci_sequence)
+
+
+
+
+
 
 
 
