@@ -108,6 +108,15 @@
 
 
 
+# Assignment 02:
+# Make a table of number which is given by the user upto 10. Make this in python
+
+table = int( input('Enter a number:             '))
+for i in range(0,11):
+    print(f'{table} x {i} = {table*i}')
+    
+    
+
 
 
 
