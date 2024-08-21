@@ -9,7 +9,7 @@ hello world
 
 # 02 legal variable name: 
 
-# myname = "John Doe"
+# my_name = "John Doe"
 # name = "Jane Doe"
 # _name1= "Jane Doe" # snake case writing style
 # nameFirst = "Jane" # camel case writing style
@@ -178,8 +178,8 @@ hello world
 # st = {"John Doe",26}
 # print(type(st))
 
-# frst = frozenset({"hello"})
-# print(type(frst))
+# first = frozenset({"hello"})
+# print(type(first))
 # bln = True
 # print(type(bln))
 
@@ -254,7 +254,7 @@ hello world
 # print(thisdict.keys())
 # print(thisdict)
 
-# prnt = {
+# print = {
 #     "child1":{
 #         "name":"ashutosh",
 #         "age":24,
@@ -269,10 +269,10 @@ hello world
 #     }
 # }
 
-# prnt["child1"] = "Ashutosh Khan"
-# prnt2 = prnt.copy()
-# print(prnt)
-# print(prnt2)
+# print["child1"] = "Ashutosh Khan"
+# print2 = print.copy()
+# print(print)
+# print(print2)
 
 # dic1 = {"name":"John Doe", "age":26, "city":"New York"}
 # dic2 = dic1.copy()
@@ -281,15 +281,15 @@ hello world
 # print(dic2)
 
 
-# print(prnt)
-# print(prnt2)
-# print(prnt)
-# print(prnt2)
+# print(print)
+# print(print2)
+# print(print)
+# print(print2)
 
-# print(prnt)
-# print(prnt["child1"]["name"])
-# prnt["child1"]["name"] = "Ashutosh Khan"
-# print(prnt)
+# print(print)
+# print(print["child1"]["name"])
+# print["child1"]["name"] = "Ashutosh Khan"
+# print(print)
 
 # 15 sets
 
@@ -409,8 +409,8 @@ s = 12
 
 # 23 lambda expressions
 
-p = lambda x: x**2
-print(p(5))
+# p = lambda x: x**2
+# print(p(5))
 
 
 # 24 map and filter
