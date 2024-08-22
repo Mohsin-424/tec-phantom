@@ -54,19 +54,6 @@ tup = ( 1,2,3,4,int('5'),6,7)
 y = list(tup)
 print(y)
 
-# y.insert(0 , " Hello World!")
-# print(y)
-# tup = tuple(y)
-# print(tup)
-
-# y.remove((5))
-# # del y[0]
-# y.pop(0) # remove from index position
-
-
-# print(y)
-
-
 
 
 
