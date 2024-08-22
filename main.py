@@ -415,6 +415,31 @@ s = 12
 
 # 24 map and filter
 
+# def square(n):
+#     if n % 2 == 0:
+#         return "Even Number"
+# numbers = [1,2,3,4,4,5,5,6,67,7,8,9,10,11,823]
+
+# # even_numbers= list(map(square, numbers))
+# # even_numbers= list(filter(square, numbers))
+# # even_numbers= set(filter(square, numbers))
+# even_numbers= tuple(filter(square, numbers))
+# print(even_numbers)
+
+
+
+def square(n):
+    if n % 2 == 0:
+        return "Even Number"
+
+
+even_numbers= tuple(filter(square,[1,2,3,4,5,6,7,7,8,8,9,9,0,0,10]))
+even_numbers= tuple(map(square,[1,2,3,4,5,6,7,7,8,8,9,9,0,0,10]))
+# even_numbers= list(filter(square,[1,2,3,4,5,6,7,7,8,8,9,9,0,0,10]))
+print(even_numbers)
+
+
+
 # 25 Inner/ nested functions
 # 26 file handling / EXCEPTION handling
 
