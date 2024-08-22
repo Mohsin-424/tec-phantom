@@ -22,14 +22,30 @@
 # f  = open("example.txt", "a")
 # f.write("Hello, world!")To reove files we need to import os
 
-import os
-old_name = "example.txt"
-new_name = "new_file.txt"
-os.rename(old_name, new_name)
+# import os
+# old_name = "example.txt"
+# new_name = "new_file.txt"
+# os.rename(old_name, new_name)
 
 
 
 # f  = open("example.txt", "a")
 # f.write("Hello, world!")
+# f.close()
 
 
+# f  = open("example.txt", "a")
+# f.read()
+
+
+f = open("example.txt", "r")
+data = f.read()
+print(data)
+f.close()
+
+
+
+
+# r = read
+# a = append
+# w = write
