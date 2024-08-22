@@ -428,20 +428,67 @@ s = 12
 
 
 
-def square(n):
-    if n % 2 == 0:
-        return "Even Number"
+# def square(n):
+#     if n % 2 == 0:
+#         return "Even Number"
 
 
-even_numbers= tuple(filter(square,[1,2,3,4,5,6,7,7,8,8,9,9,0,0,10]))
-even_numbers= tuple(map(square,[1,2,3,4,5,6,7,7,8,8,9,9,0,0,10]))
-# even_numbers= list(filter(square,[1,2,3,4,5,6,7,7,8,8,9,9,0,0,10]))
-print(even_numbers)
+# even_numbers= tuple(filter(square,[1,2,3,4,5,6,7,7,8,8,9,9,0,0,10]))
+# even_numbers= tuple(map(square,[1,2,3,4,5,6,7,7,8,8,9,9,0,0,10]))
+# # even_numbers= list(filter(square,[1,2,3,4,5,6,7,7,8,8,9,9,0,0,10]))
+# print(even_numbers)
 
 
 
 # 25 Inner/ nested functions
-# 26 file handling / EXCEPTION handling
+    
+# def s():
+#     # Function declaration
+#     def p():
+#         return "Hello Pakistan"
+#     p()
+# print(s())
+
+
+
+# def parent_function():
+#     def nested_function():
+#         return "I am a nested function!"
+    
+#     return nested_function()
+
+# print(parent_function())
+
+
+# 26 file handling / EXCEPTION handling == Error Handling
+
+
+# print(x) # to stay away from errors
+# Use try excet
+# try:
+#     print(x)
+# except:
+#     print("Error Occured")
+
+# finally:
+#     print("Finally Black is executed")
+
+
+# ................................... try except else finally.........................................
+x = 10
+try:
+    print(x)
+except:
+    print("Error Occured")
+else:
+    print("No error Occured")
+
+finally:
+    print("Finally Black is executed")
+
+# ....Interpreter . ............Assembler ................Compiler
+
+
 
 
 # 27 class and objects
