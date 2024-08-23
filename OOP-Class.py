@@ -178,30 +178,57 @@
 
 
 # Polymorphism in Python
-class P1:
-    def show(self):
-        print("P1 show")
-class P2:
-    def show(self):
-        print("P2 show")
-# s = P1()
-s = P2()
-s.show()
-
-
-# Polymorphism in Python
-class P1:
-    def display(self):
-        print("P1 show")
-class P2:
-    def display(self):
-        print("P2 show")
-# s = P1()
+# class P1:
+#     def show(self):
+#         print("P1 show")
+# class P2:
+#     def show(self):
+#         print("P2 show")
+# # s = P1()
 # s = P2()
-# s.display()
+# s.show()
 
-x = P1()
+
+# # Polymorphism in Python
+# class P1:
+#     def display(self):
+#         print("P1 show")
+# class P2:
+#     def display(self):
+#         print("P2 show")
+# # s = P1()
+# # s = P2()
+# # s.display()
+
+# x = P1()
+# x.display()
+
+
+
+
+# .......................................... Abstraction ............................................
+
+
+class Employee:
+    def __init__(self, name, salary):
+        self._name = name
+        self._salary = salary
+
+    def display(self):
+        # for abstraction we nened to add abstractions
+        total = self._salary + 230000
+        print(f"Name: {self._name}, Salary: {self._salary}, Total: {total}")
+        # print(f"Name: {self._name}, Salary: {self._salary}")
+
+x = Employee("ashutosh" , 230000 )
 x.display()
+
+
+
+# Private Public Protected Methods
+
+
+
 
 
 
