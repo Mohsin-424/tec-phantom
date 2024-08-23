@@ -115,68 +115,78 @@
 
 # ...................Multilpe Inheritance.......................
 
-class Parent1:
-    def __init__(self, name):
-        self.name = name
-        print("Multiple  created as Parent11")
-class Parent2:
-    def __init__(self,age):
-        self.age = age
-        print("Multiple  created as Parent2")
+# class Parent1:
+#     def __init__(self, name):
+#         self.name = name
+#         print("Multiple  created as Parent11")
+# class Parent2:
+#     def __init__(self,age):
+#         self.age = age
+#         print("Multiple  created as Parent2")
 
-class Child(Parent2, Parent1):
+# class Child(Parent2, Parent1):
 
+#     def show(self):
+#         print(f'Age: {self.age}')
+
+# p  = Child(3)
+# p.show()
+
+
+
+
+# class Parent1:
+#     def __init__(self, name):
+#         self.name = name
+#         print("Multiple  created as Parent11")
+# class Parent2:
+#     def __init__(self,age):
+#         self.age = age
+#         print("Multiple  created as Parent2")
+
+# class Child(Parent1, Parent2):  # Order changed this time
+
+#     def show(self):
+#         print(f'Nmae : {self.name}')
+
+# p  = Child("gOPI kISHAN")          #Mre do do baap
+# p.show()
+
+
+
+# # .................................. Method Resolution Order MRO ................................
+
+# class Parent1:
+#     def __init__(self, name , age):
+#         self.name = name
+#         self.age = age
+#         print("Multiple  created as Parent11")
+# class Parent2:
+#     def __init__(self,age):
+#         self.age = age
+#         print("Multiple  created as Parent2")
+
+# class Child(Parent1, Parent2):  # Order changed this time
+
+#     def show(self):
+#         print(f'Nmae : {self.name} have age: {self.age}')
+
+# p  = Child("gOPI kISHAN" , 23)          #Mre do do baap
+# p.show()
+
+
+
+
+# Polymorphism in Python
+class P1:
     def show(self):
-        print(f'Age: {self.age}')
-
-p  = Child(3)
-p.show()
-
-
-
-
-class Parent1:
-    def __init__(self, name):
-        self.name = name
-        print("Multiple  created as Parent11")
-class Parent2:
-    def __init__(self,age):
-        self.age = age
-        print("Multiple  created as Parent2")
-
-class Child(Parent1, Parent2):  # Order changed this time
-
+        print("P1 show")
+class P2:
     def show(self):
-        print(f'Nmae : {self.name}')
-
-p  = Child("gOPI kISHAN")          #Mre do do baap
-p.show()
-
-
-
-
-class Parent1:
-    def __init__(self, name , age):
-        self.name = name
-        self.age = age
-        print("Multiple  created as Parent11")
-class Parent2:
-    def __init__(self,age):
-        self.age = age
-        print("Multiple  created as Parent2")
-
-class Child(Parent1, Parent2):  # Order changed this time
-
-    def show(self):
-        print(f'Nmae : {self.name} have age: {self.age}')
-
-p  = Child("gOPI kISHAN" , 23)          #Mre do do baap
-p.show()
-
-
-
-
-# .................................. Method Resolution Order MRO ................................
+        print("P2 show")
+# s = P1()
+s = P2()
+s.show()
 
 
 
