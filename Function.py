@@ -144,13 +144,72 @@
 
 
 
-try:
-    # Code that may raise an exception
-    x = 1 / 0
-except ZeroDivisionError:
-    # Code to handle the exception
-    print("Error: Division by zero is not allowed.")
-finally:
-    # Code that will always be executed, regardless of whether an exception occurred or not
-    print("This code will always be executed.")
+# try:
+#     # Code that may raise an exception
+#     x = 1 / 0
+# except ZeroDivisionError:
+#     # Code to handle the exception
+#     print("Error: Division by zero is not allowed.")
+# finally:
+#     # Code that will always be executed, regardless of whether an exception occurred or not
+#     print("This code will always be executed.")
 
+
+
+
+
+
+
+
+
+
+
+
+
+# ........................Functions Practice Problems ......................
+
+# Write a Python function that takes two numbers as input and returns the sum of the two numbers.
+
+def sum( a , b ):
+    return a + b
+alpha = sum( 2 , 4 )
+print(f' The sum of a and b:     {alpha}')
+
+
+
+# Create a function that checks if a given number is prime or not and returns True or False accordingly.
+
+def is_prime(n):
+    if n < 2:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+    for i in range(3, int(n**0.5) + 1, 2):
+        if n % i == 0:
+            return False
+        return True
+print(is_prime(7))
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+# Write a function that takes a list of numbers as input and returns the maximum number in the list.
+# Create a function that calculates the factorial of a given number.
+# Write a function that takes a string as input and returns the reverse of the string.
+# Create a function that calculates the area of a circle given the radius as input.
+# Write a function that checks if a given string is a palindrome or not.
+# Create a function that takes a list of integers as input and returns a new list with only the even numbers from the original list.
+# Write a function that converts temperature from Celsius to Fahrenheit and vice versa.
+# Create a function that takes a list of strings as input and returns a new list with the strings sorted in alphabetical order.
