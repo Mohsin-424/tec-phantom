@@ -189,5 +189,22 @@ s = P2()
 s.show()
 
 
+# Polymorphism in Python
+class P1:
+    def display(self):
+        print("P1 show")
+class P2:
+    def display(self):
+        print("P2 show")
+# s = P1()
+# s = P2()
+# s.display()
+
+x = P1()
+x.display()
+
+
+
+
 
 
