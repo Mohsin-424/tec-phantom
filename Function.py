@@ -170,38 +170,51 @@
 
 # Write a Python function that takes two numbers as input and returns the sum of the two numbers.
 
-def sum( a , b ):
-    return a + b
-alpha = sum( 2 , 4 )
-print(f' The sum of a and b:     {alpha}')
+# def sum( a , b ):
+#     return a + b
+# alpha = sum( 2 , 4 )
+# print(f' The sum of a and b:     {alpha}')
 
 
 
-# Create a function that checks if a given number is prime or not and returns True or False accordingly.
+# # Create a function that checks if a given number is prime or not and returns True or False accordingly.
 
-def is_prime(n):
-    if n < 2:
-        return False
-    if n == 2:
-        return True
-    if n % 2 == 0:
-        return False
-    for i in range(3, int(n**0.5) + 1, 2):
-        if n % i == 0:
-            return False
-        return True
-print(is_prime(7))
+# def is_prime(n):
+#     if n < 2:
+#         return False
+#     if n == 2:
+#         return True
+#     if n % 2 == 0:
+#         return False
+#     for i in range(3, int(n**0.5) + 1, 2):
+#         if n % i == 0:
+#             return False
+#         return True
+# print(is_prime(7))
 
 
 
 
 
     
+# Function to calucalte area of square
+
+# def square_area(side):
+#     return side * side
+# bravo = square_area(8)
+# print(f'The area of square with side 8:     {bravo}')
 
 
 
 
+def square(n):
+    area = n*n
 
+    print(area)
+print(f'  The are aof square is :{square(9)}')
+
+
+ 
 
 
 

@@ -223,8 +223,6 @@ class Employee:
 x = Employee("ashutosh" , 230000 )
 x.display()
 
-
-
 # Private Public Protected Methods
 
 
