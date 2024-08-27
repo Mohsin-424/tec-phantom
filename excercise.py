@@ -111,24 +111,31 @@
 # Assignment 02:
 # Make a table of number which is given by the user upto 10. Make this in python
 
-table = int( input('Enter a number:             '))
-for i in range(0,11):
-    print(f'{table} x {i} = {table*i}')
+# table = int( input('Enter a number:             '))
+# for i in range(0,11):
+#     print(f'{table} x {i} = {table*i}')
     
     
 
 
 
+# print('  I am alone '.strip('d')   )
+# print('  I am alone '.split()   )
+
+# print('Help me'.replace('me', 'you'))
+
+# # print('Need to make fire'.startswith('Need'))
+# # print('bye bye'.index(e))
+# print('and cook rice'.endswith('rice'))
+
+print('ok, I am done.'.capitalize() )
+print('oh hi there'.count('e'))
 
 
 
 
+name1 = 'Andrei'
+name2 = 'Sunny'
+print(f'Hello there {name1} and {name2}')          # Hello there Andrei and 
 
-
-   
-
-    
-    
-
-
-
+# print('Hello there {} and {}'.format(name1, name2))
