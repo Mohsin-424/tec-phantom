@@ -128,14 +128,17 @@
 # # print('bye bye'.index(e))
 # print('and cook rice'.endswith('rice'))
 
-print('ok, I am done.'.capitalize() )
-print('oh hi there'.count('e'))
+# print('ok, I am done.'.capitalize() )
+# print('oh hi there'.count('e'))
 
 
 
 
-name1 = 'Andrei'
-name2 = 'Sunny'
-print(f'Hello there {name1} and {name2}')          # Hello there Andrei and 
+# name1 = 'Andrei'
+# name2 = 'Sunny'
+# print(f'Hello there {name1} and {name2}')          # Hello there Andrei and 
 
 # print('Hello there {} and {}'.format(name1, name2))
+
+dollar = 10
+print(f'my net worth is  {dollar} PKR')
