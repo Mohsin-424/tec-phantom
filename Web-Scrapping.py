@@ -3,32 +3,32 @@ import bs4
  
 
 
-# result = requests.get('https://mohsin-424.github.io/ee/')
-# result = requests.get('https://creativecommons.org/')
-# result = requests.get('https://sci-hub.se/')
-# result = requests.get('https://moviesmod.monster/')
-# result = requests.get('https://github.com/Mohsin-424')
-result = requests.get('https://en.wikipedia.org/wiki/Elon_Musk')
-# result = requests.get('https://medium.com/geekculture/web-scraping-with-python-a-complete-step-by-step-guide-code-5174e52340ea')
+# # result = requests.get('https://mohsin-424.github.io/ee/')
+# # result = requests.get('https://creativecommons.org/')
+# # result = requests.get('https://sci-hub.se/')
+# # result = requests.get('https://moviesmod.monster/')
+# # result = requests.get('https://github.com/Mohsin-424')
+# result = requests.get('https://en.wikipedia.org/wiki/Elon_Musk')
+# # result = requests.get('https://medium.com/geekculture/web-scraping-with-python-a-complete-step-by-step-guide-code-5174e52340ea')
 
-print(type(result))
-print(result)
-sop = bs4.BeautifulSoup(result.text , "lxml")
-print(sop)
+# print(type(result))
+# print(result)
+# sop = bs4.BeautifulSoup(result.text , "lxml")
+# print(sop)
 
-# site_para = sop.select('p')
-# site_para = sop.select('div')
-# site_para = sop.select('.description')
-# site_para = sop.select('.skip-to-content')
-# site_para = sop.select('footer')
-site_para = sop.select('header')
-site_para = type(sop.select('header'))
-print(site_para)
+# # site_para = sop.select('p')
+# # site_para = sop.select('div')
+# # site_para = sop.select('.description')
+# # site_para = sop.select('.skip-to-content')
+# # site_para = sop.select('footer')
+# site_para = sop.select('header')
+# site_para = type(sop.select('header'))
+# print(site_para)
 
 
 
-for item in sop.select('header'):
-    print(item.text)
+# for item in sop.select('header'):
+#     print(item.text)
 
 
 # site_para[1].get_text()
@@ -68,16 +68,61 @@ for item in sop.select('header'):
 
 
 
-import csv
-# data to be saved
-data = [
-['Jay', 'Dominic', 25],
-['Justin', 'Seam', 30],
-['Bob', 'Lans', 40]
-]
-# open a file for writing
-with open('data.csv', mode='w', newline='') as file:
-# create a csv writer object
-            writer = csv.writer(file)
-# write the data to the file
-writer.writerows(data)
+# import csv
+# # data to be saved
+# data = [
+# ['Jay', 'Dominic', 25],
+# ['Justin', 'Seam', 30],
+# ['Bob', 'Lans', 40]
+# ]
+# # open a file for writing
+# with open('data.csv', mode='w', newline='') as file:
+# # create a csv writer object
+#             writer = csv.writer(file)
+# # write the data to the file
+# writer.writerows(data)
+
+
+
+
+
+# ..................... Image Scraping ................................
+
+
+
+# import requests
+# from bs4 import BeautifulSoup
+
+# # URL of the webpage
+# url = "https://miro.medium.com/v2/resize:fit:786/format:webp/0*VvjoRJ5cfWtmATBt.jpg"
+
+# # Send a GET request to the webpage
+# response = requests.get(url)
+
+# # Parse the HTML content of the webpage using BeautifulSoup
+# soup = BeautifulSoup(response.text, "html.parser")
+
+# # Find the image element in the HTML (e.g., using CSS selector or attribute)
+# image_element = soup.select_one("img")
+
+# # Extract the image URL from the image element
+# image_url = image_element["src"]
+
+# # Send a GET request to the image URL to download the image
+# image_response = requests.get(image_url)
+
+# # Save the downloaded image to a file
+# with open("image.jpg", "wb") as file:
+#     file.write(image_response.content)
+
+
+
+
+
+# res = requests.get("https://miro.medium.com/v2/resize:fit:786/format:webp/0*VvjoRJ5cfWtmATBt.jpg")
+res = requests.get("https://avatars.githubusercontent.com/u/129749023?v=4")
+
+
+soup = bs4.BeautifulSoup(res.text , "lxml")
+print(soup)
+
