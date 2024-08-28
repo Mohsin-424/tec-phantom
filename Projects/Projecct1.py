@@ -1,16 +1,13 @@
-from tkinter import ttk, Tk, PhotoImage
+from tkinter import ttk , Tk, PhotoImage , Canvas , filedialog
 
 root = Tk()
 
-ttk.Label(root, text="This is a test label").pack()
-my_label_obj = ttk.Label(root, text="This is a 2nd test label")
-my_label_obj.pack()
 
-def triggered_func():
-    print("Button Clicked!")
+ttk.Label( root , text = "This is a test label" ).pack()
+canvas = Canvas( root , bg = "gray" , width = 300 , height = 400)
+canvas.pack()
 
-my_button_obj = ttk.Button(root, text="Click Me!", command=triggered_func).pack()
+logo = PhotoImage( file = "1.png")
+canvas.create_image( 300/2 , 400/3 , image = logo )
 
-logo = PhotoImage(file = "Projects/1.png")
-ttk.Label(root, image = logo).pack()
 root.mainloop()
