@@ -4,7 +4,8 @@ import requests
 
 
 # result = requests.get('https://mohsin-424.github.io/ee/')
-result = requests.get('https://creativecommons.org/')
+# result = requests.get('https://creativecommons.org/')
+result = requests.get('https://sci-hub.se/')
 print(type(result))
 print(result)
 sop = bs4.BeautifulSoup(result.text , "lxml")
@@ -14,7 +15,8 @@ print(sop)
 # site_para = sop.select('div')
 # site_para = sop.select('.description')
 # site_para = sop.select('.skip-to-content')
-site_para = sop.select('footer')
+# site_para = sop.select('footer')
+site_para = sop.select('header')
 print(site_para)
 
 # site_para[1].get_text()
