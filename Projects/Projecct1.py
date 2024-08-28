@@ -5,7 +5,7 @@ root = Tk()
 
 
 ttk.Label( root , text = "This is a test label" ).pack()
-canvas = Canvas( root , bg = "gray" , width = 300 , height = 400)
+canvas = Canvas( root , bg = "gray" , width = 280 , height = 200)
 canvas.pack()
 
 image = Image.open("Projects/1.png")
