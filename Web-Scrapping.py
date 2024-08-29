@@ -1,9 +1,12 @@
 import requests
 import bs4
- 
 
 
-# # result = requests.get('https://mohsin-424.github.io/ee/')
+
+
+# result = requests.get('https://mohsin-424.github.io/ee/')
+result = requests.get('https://www.zameen.com/')
+# result = requests.get('https://x.com/?mx=2')
 # # result = requests.get('https://creativecommons.org/')
 # # result = requests.get('https://sci-hub.se/')
 # # result = requests.get('https://moviesmod.monster/')
@@ -12,9 +15,10 @@ import bs4
 # # result = requests.get('https://medium.com/geekculture/web-scraping-with-python-a-complete-step-by-step-guide-code-5174e52340ea')
 
 # print(type(result))
-# print(result)
+print(result)
 # sop = bs4.BeautifulSoup(result.text , "lxml")
-# print(sop)
+sop = bs4.BeautifulSoup(result.text , "html.parser")
+print(sop.findAll('div'))
 
 # # site_para = sop.select('p')
 # # site_para = sop.select('div')
@@ -119,10 +123,11 @@ import bs4
 
 
 
-# res = requests.get("https://miro.medium.com/v2/resize:fit:786/format:webp/0*VvjoRJ5cfWtmATBt.jpg")
-res = requests.get("https://avatars.githubusercontent.com/u/129749023?v=4")
+# # res = requests.get("https://miro.medium.com/v2/resize:fit:786/format:webp/0*VvjoRJ5cfWtmATBt.jpg")
+# res = requests.get("https://avatars.githubusercontent.com/u/129749023?v=4")
+# res = requests.get("https://www.zameen.com/")
 
 
-soup = bs4.BeautifulSoup(res.text , "lxml")
-print(soup)
+# soup = bs4.BeautifulSoup(res.text , "lxml")
+# print(soup)
 

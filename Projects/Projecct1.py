@@ -42,8 +42,47 @@ class FrontEnd:
         ttk.Button(self.frame_menu, text="Flip", command=self.flip_action).grid(row=8, column = 0,padx=5, pady=5, sticky="sw")
         ttk.Button(self.frame_menu, text="Save As", command=self.save_action).grid(row=8,column = 0, padx=5, pady=5, sticky="sw")
 
-    # Method Definitions
+
+
+        self.apply_and_cancel = ttk.Frame( self.master )
+        self.apply_and_cancel.pack()
+
+        ttk.Button(self.apply_and_cancel , text = "Apply" , command = self.apply_action).grid(row = 0 , column = 0 ,padx = 5 , pady = 5 , sticky = "sw")
+
+
+
+
+       
+
+        ttk.Button(self.apply_and_cancel, text="Cancel", command=self.cancel_action).grid(row=0,column = 1, padx=5, pady=5, sticky="sw")
+
+        ttk.Button(self.apply_and_cancel, text="Revert all changes", command=self.save_action).grid(row=0,column = 2, padx=5, pady=5, sticky="sw")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # Method Definition Functions
+
+
+
+
+
+
     def upload_action(self):
+        
         pass
 
     def text_action(self):
@@ -72,6 +111,20 @@ class FrontEnd:
 
     def adjust_action(self):
         pass
+
+
+
+    def apply_action(self):
+        pass
+
+
+    def cancel_action(self):
+        pass
+
+
+    def revert_action(self):
+        pass
+
 
 root = Tk()
 FrontEnd(root)
