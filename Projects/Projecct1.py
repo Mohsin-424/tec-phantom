@@ -75,6 +75,33 @@ class FrontEnd:
         pass
 
     def filter_action(self):
+        self.refresh_side_frame()
+        ttk.Button(self.side_frame, text="Negative", command=self.negative_action).grid(row=0, column=2, padx=5, pady=5, sticky="sw")
+        ttk.Button(self.side_frame, text="Black and White", command=self.bw_action).grid(row=1, column=2, padx=5, pady=5, sticky="sw")
+        ttk.Button(self.side_frame, text="Stylisation", command=self.stylisation_action).grid(row=2, column=2, padx=5, pady=5, sticky="sw")
+        ttk.Button(self.side_frame, text="Sketch Effect", command=self.sketch_action).grid(row=3, column=2, padx=5, pady=5, sticky="sw")
+        ttk.Button(self.side_frame, text="Emboss", command=self.emboss_action).grid(row=4, column=2, padx=5, pady=5, sticky="sw")
+        ttk.Button(self.side_frame, text="Sepia", command=self.sepia_action).grid(row=5, column=2, padx=5, pady=5, sticky="sw")
+
+   
+
+    # Placeholder methods for filter actions
+    def negative_action(self):
+        pass
+
+    def bw_action(self):
+        pass
+
+    def stylisation_action(self):
+        pass
+
+    def sketch_action(self):
+        pass
+
+    def emboss_action(self):
+        pass
+
+    def sepia_action(self):
         pass
 
     def blur_action(self):
@@ -100,6 +127,8 @@ class FrontEnd:
 
     def revert_action(self):
         pass
+
+
 
 root = Tk()
 FrontEnd(root)
