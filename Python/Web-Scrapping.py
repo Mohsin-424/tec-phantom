@@ -1,10 +1,10 @@
-# import requests
-# import bs4
+import requests
+import bs4
 
 
 
 
-# # result = requests.get('https://mohsin-424.github.io/ee/')
+result = requests.get('https://mohsin-424.github.io/ee/')
 # result = requests.get('https://www.zameen.com/')
 # # result = requests.get('https://x.com/?mx=2')
 # # # result = requests.get('https://creativecommons.org/')
@@ -14,20 +14,20 @@
 # # result = requests.get('https://en.wikipedia.org/wiki/Elon_Musk')
 # # # result = requests.get('https://medium.com/geekculture/web-scraping-with-python-a-complete-step-by-step-guide-code-5174e52340ea')
 
-# # print(type(result))
-# print(result)
-# # sop = bs4.BeautifulSoup(result.text , "lxml")
-# sop = bs4.BeautifulSoup(result.text , "html.parser")
-# print(sop.findAll('div'))
+# print(type(result))
+print(result)
+sop = bs4.BeautifulSoup(result.text , "lxml")
+sop = bs4.BeautifulSoup(result.text , "html.parser")
+print(sop.findAll('div'))
 
-# # site_para = sop.select('p')
+site_para = sop.select('p')
 # # site_para = sop.select('div')
 # # site_para = sop.select('.description')
 # # site_para = sop.select('.skip-to-content')
 # # site_para = sop.select('footer')
 # site_para = sop.select('header')
 # site_para = type(sop.select('header'))
-# print(site_para)
+print(site_para)
 
 
 
@@ -130,74 +130,3 @@
 
 # soup = bs4.BeautifulSoup(res.text , "lxml")
 # print(soup)
-
-
-
-
-from tkinter import *
-from tkinter import ttk
-root = Tk()
-frm = ttk.Frame(root, padding=10)
-frm.grid()
-ttk.Label(frm, text="Hello World!").grid(column=0, row=0)
-ttk.Button(frm, text="Quit", command=root.destroy).grid(column=1, row=0)
-root.mainloop()
-
-
-
-
-
-
-
-import tkinter as tk
-
-class App(tk.Frame):
-    def __init__(self, master):
-        super().__init__(master)
-        self.pack()
-
-        self.entrythingy = tk.Entry()
-        self.entrythingy.pack()
-
-        # Create the application variable.
-        self.contents = tk.StringVar()
-        # Set it to some value.
-        self.contents.set("this is a variable")
-        # Tell the entry widget to watch this variable.
-        self.entrythingy["textvariable"] = self.contents
-
-        # Define a callback for when the user hits return.
-        # It prints the current value of the variable.
-        self.entrythingy.bind('<Key-Return>',
-                             self.print_contents)
-
-    def print_contents(self, event):
-        print("Hi. The current entry content is:",
-              self.contents.get())
-
-root = tk.Tk()
-myapp = App(root)
-myapp.mainloop()
-
-
-
-
-
-import tkinter as tk
-
-class App(tk.Frame):
-    def __init__(self, master=None):
-        super().__init__(master)
-        self.pack()
-
-# create the application
-myapp = App()
-
-#
-# here are method calls to the window manager class
-#
-myapp.master.title("My Do-Nothing Application")
-myapp.master.maxsize(1000, 400)
-
-# start the program
-myapp.mainloop()
