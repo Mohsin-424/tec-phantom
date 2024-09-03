@@ -4,8 +4,8 @@ import bs4
 
 
 
-result = requests.get('https://mohsin-424.github.io/ee/')
-# result = requests.get('https://www.zameen.com/')
+# result = requests.get('https://mohsin-424.github.io/ee/')
+result = requests.get('https://www.zameen.com/')
 # # result = requests.get('https://x.com/?mx=2')
 # # # result = requests.get('https://creativecommons.org/')
 # # # result = requests.get('https://sci-hub.se/')
