@@ -50,10 +50,12 @@
 
 
 
-tup = ( 1,2,3,4,int('5'),6,7)
-y = list(tup)
-print(y)
+# tup = ( 1,2,3,4,int('5'),6,7)
+# y = list(tup)
+# print(y)
 
 
 
+
+import numpy as np
 

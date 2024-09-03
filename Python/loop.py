@@ -17,6 +17,47 @@
 #         break
 #     print(i)
 
+
+
+
+
+# i = 1
+# while i < 6:
+#   print(i)
+#   if (i == 3):
+#     break
+#   i += 1
+
+
+# Write a program that prints the numbers from 1 to n. But for multiples of 3, print 'Fizz' 
+#  instead of the number, and for multiples of 5, print 'Buzz'. For numbers that are multiples of both 3 and 5, print 'FizzBuzz'
+
+mohsin = [1 , 2,3,43,4,5,6,23,7,8]
+for i in mohsin:
+    if i%3 == 0:
+        print("Fizz")
+    elif i % 5 ==0:
+        print("Buzz")
+    elif  i%3 == 0 and i%5 ==0:
+        print("Fizz Buzz")
+    else:
+        print("Nothing")
+
+
+        
+mohsin = [1 , 2,3,43,4,5,6,23,7,8]
+for i in mohsin:
+    if i%3 == 0:
+        print("Fizz")
+    elif i % 5 ==0:
+        print("Buzz")
+    elif  i%3 ==0 and i%5 ==0:
+        print("Fizz Buzz")
+    else:
+        print("Nothing")
+
+
+
         
 
 
