@@ -79,6 +79,7 @@ cv.destroyAllWindows()
 
 
 
+
 # ...........,,,,,,,................... Draw Shape and Put-Text ........................
 
 
