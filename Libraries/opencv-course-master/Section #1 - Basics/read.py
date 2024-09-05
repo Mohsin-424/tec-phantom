@@ -2,13 +2,13 @@
 
 import cv2 as cv
 
-img = cv.imread('../Resources/Photos/cats.jpg')
+img = cv.imread('f:/Techphantom/Libraries/opencv-course-master/Resources/Photos/cat.jpg')
 cv.imshow('Cats', img)
 
 cv.waitKey(0)
 
 # Reading Videos
-capture = cv.VideoCapture('../Resources/Videos/dog.mp4')
+capture = cv.VideoCapture('f:/Techphantom/Libraries/opencv-course-master/Resources/Videos/dog.mp4')
 
 while True:
     isTrue, frame = capture.read()
@@ -19,7 +19,7 @@ while True:
     # break from the loop. 
     if isTrue:    
         cv.imshow('Video', frame)
-        if cv.waitKey(20) & 0xFF==ord('d'):
+        if cv.waitKey(20) & 0xFF==ord('q'):
             break            
     else:
         break

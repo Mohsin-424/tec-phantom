@@ -1,24 +1,25 @@
 import cv2 as cv 
-img = cv.imread("../Resources/Photos/cat.jpg")
+# img = cv.imread("f:/Techphantom/Libraries/opencv-course-master/Resources/Photos/cat.jpg")
 
-cv.imshow("Cat" , img)
-cv.waitKey(0)
+# cv.imshow("Cat" , img)
+# cv.waitKey(0)
 
 
 # ..........To Read Video...............
 
-capture = cv.VideoCapture(0)
-video = cv.imread("../Resources/Videos/dog.mp4")
+# capture = cv.VideoCapture("f:/Techphantom/Libraries/opencv-course-master/Resources/Videos/dog.mp4")
 
-cv.imshow("Dog" , video)
-while True:
-    isTrue , frame = capture.read()
-    cv.imshow( "Video" , frame )
-    if cv.waitKey(0) & 0xFF == ord("q"):
-        break
 
-cv.waitKey(0)
-cv.destroyAllWindows()
+# while True:
+#     isTrue , frame = capture.read()
+#     cv.imshow( "Dog Video" , frame )
+#     if cv.waitKey(0) & 0xFF == ord("q"):
+#         break
+#     else:
+#         break
+
+# capture.release()
+# cv.destroyAllWindows()
 
 
 
@@ -33,39 +34,40 @@ cv.destroyAllWindows()
 
 
 #pylint:disable=no-member
-# img = cv.imread('../Resources/Photos/cat.jpg')
-# cv.imshow('Cat', img)
+img = cv.imread('f:/Techphantom/Libraries/opencv-course-master/Resources/Photos/cat.jpg')
+cv.imshow('Cat', img)
 
-# def rescaleFrame(frame, scale=0.75):
-#     # Images, Videos and Live Video
-#     width = int(frame.shape[1] * scale)
-#     height = int(frame.shape[0] * scale)
+def rescaleFrame(frame, scale=0.75):
+    # Images, Videos and Live Video
+    width = int(frame.shape[1] * scale)
+    height = int(frame.shape[0] * scale)
 
-#     dimensions = (width,height)
+    dimensions = (width,height)
 
-#     return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
+    return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
 
-# def changeRes(width,height):
-#     # Live video
-#     capture.set(3,width)
-#     capture.set(4,height)
+def changeRes(width,height):
+    # Live video
+    capture.set(3,width)
+    capture.set(4,height)
     
-# # Reading Videos
-# capture = cv.VideoCapture('../Resources/Videos/dog.mp4')
+# Reading Videos
 
-# while True:
-#     isTrue, frame = capture.read()
+capture = cv.VideoCapture('f:/Techphantom/Libraries/opencv-course-master/Resources/Videos/dog.mp4')
 
-#     frame_resized = rescaleFrame(frame, scale=.2)
+while True:
+    isTrue, frame = capture.read()
+
+    frame_resized = rescaleFrame(frame, scale=.2)
     
-#     cv.imshow('Video', frame)
-#     cv.imshow('Video Resized', frame_resized)
+    cv.imshow('Video', frame)
+    cv.imshow('Video Resized', frame_resized)
 
-#     if cv.waitKey(20) & 0xFF==ord('q'):
-#         break
+    if cv.waitKey(20) & 0xFF==ord('q'):
+        break
 
-# capture.release()
-# cv.destroyAllWindows()
+capture.release()
+cv.destroyAllWindows()
 
 
 
